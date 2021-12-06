@@ -1,0 +1,79 @@
+/* Stylesheet for the Full Screen Landing Page 
+project 11/23/2021 
+
+font-family: 'Cabin', sans-serif; */
+
+html, body {
+	margin:  0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+section#intro {
+	background-image: url(background1.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+div#content {
+	display: table-cell;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+div#content h1 {
+	font-family: 'Cabin', sans-serif;
+	font-size: 600%;
+	color: aliceblue;
+	letter-spacing: 6px;
+	text-shadow: 4px 0px 10px black;
+	margin-bottom: 45px;
+}
+
+a#btn {
+	text-decoration: none;
+	background-color: beige;
+	color: black;
+	font-size: 250%;
+	padding: 10px 20px;
+	border: solid sandybrown 4px;
+	border-radius: 15px;
+	transition: all 1s;
+}
+
+a#btn:hover {
+	color: maroon;
+	border: solid orange 4px;
+	background-color: lemonchiffon;
+	font-size: 255%;
+}
+
+p {
+	font-size: 120%;
+	text-align: justify;
+	margin: 10px;
+}
+
+/* Media Query Styling */
+@media screen and (max-width: 768px) {
+	div#content h1 {
+		font-size: 300%;
+	}
+
+	a#btn {
+		font-size: 150%;
+	}
+
+	a#btn:hover {
+		font-size: 155%;
+	}
+
+	p {
+		display: none;
+	}
+}
